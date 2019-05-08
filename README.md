@@ -6,7 +6,8 @@
 
 
 
-TFregulomeR
+TFregulomeR-dev
+
 
  [![Build Status](https://travis-ci.com/linquynus/TFregulomeR.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR)
 
@@ -49,8 +50,11 @@ TFregulomeR data warehouse version: 1.0.0
 
 ## Release notes
 
+#### This repository is TFregulomeR development release
+
 #### Current TFregulomeR release version: 1.0.0 (Updated on 7 May 2019).
-v1.0.0 note: stable release version.
+
+#### For stable release, please visit [TFregulomeR](https://github.com/benoukraflab/TFregulomeR)
 
 -------
 
@@ -85,7 +89,7 @@ In R console,
 ```r
 # if you have not installed "devtools" package
 install.packages("devtools")
-devtools::install_github("linquynus/TFregulomeR")
+devtools::install_github("linquynus/TFregulomeR-dev")
 ```
 The step above will automatically install the required packages. However, you still need to install optional packages if you opt to use the functions such as `greatAnnotate()`, `genomeAnnotate()` and `toTFBSTools()`.
 
