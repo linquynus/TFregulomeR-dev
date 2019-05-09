@@ -4,7 +4,7 @@ library(gplots)
 # CEBPB motifs in TFregulomeR
 CEBPB_record <- TFBSBrowser(tf = "CEBPB")
 
-################### K562 shared CEBPB targets (Figure 1A, B, C and D left)###############################
+################### K562 shared CEBPB targets (Figure 2A, B, C and D left)###############################
 K562_commonPeak <- commonPeaks(target_peak_id = "MM1_HSA_K562_CEBPB",
                                  motif_only_for_target_peak = T,  
                                  compared_peak_id = CEBPB_record$ID, 
@@ -79,9 +79,9 @@ K562_common_no_cebpd <- exclusivePeaks(user_target_peak_list = list(K562_commonP
                                        methylation_profile_in_narrow_region = T)
 K562_common_no_cebpd_res <- exclusivePeakResult(exclusivePeaks = K562_common_no_cebpd, 
                                                 save_MethMotif_logo = T)
-################### K562 shared CEBPB targets (Figure 1A, B, C and D left) #######################
+################### K562 shared CEBPB targets (Figure 2A, B, C and D left) #######################
 
-################### K562 exclusive CEBPB targets (Figure 1A, B, C and D right) #####################
+################### K562 exclusive CEBPB targets (Figure 2A, B, C and D right) #####################
 #remove MM1_HSA_K562_CEBPB ID from all CEBPB TFregulomeR IDs
 CEBPB_record_ID_noK562 <- CEBPB_record$ID[!(CEBPB_record$ID %in% "MM1_HSA_K562_CEBPB")]
 
@@ -162,7 +162,7 @@ K562_exclusive_no_atf4 <- exclusivePeaks(user_target_peak_list = list(K562_exclu
                                          methylation_profile_in_narrow_region = T)
 K562_exclusive_no_atf4_res <- exclusivePeakResult(exclusivePeaks = K562_exclusive_no_atf4, 
                                                   save_MethMotif_logo = T)
-################### K562 exclusive CEBPB targets (Figure 1A, B, C and D right) #####################
+################### K562 exclusive CEBPB targets (Figure 2A, B, C and D right) #####################
 
 
 # CEBPB Meth(Motif) in all cell types (Supplementary Figure1)
