@@ -8,6 +8,7 @@
 
 TFregulomeR-dev
 
+[![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
 # Introduction
 *TFregulomeR* comprises of a comprehensive compendium of transcription factor binding sites (TFBSs) derived from the MethMotif and GTRD, as well as the ready-to-use functionality in R language facilitating data access, integration and analysis. The binding motifs predicted in-silico from MethMotif and GTRD describe cell specific transcription factor (TF) binding propensities, while the DNA methylation profiles from MethMotif portray a second epigenetic dimension in TF binding events. The whole toolbox allows a better understanding of the TF binding propensities in a cell-specific manner. 
