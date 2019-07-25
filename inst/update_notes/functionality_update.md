@@ -1,5 +1,5 @@
 ## Current Functionalities v1.0.9
-### New features compared to last version v1.0.0 are highlighted  in red color
+### New features compared to last version v1.0.0 are highlighted in bold font
 
 1) Browse the TFregulomeR data warehouse (TFBSBrowser)
 2) Load TF peaks (loadPeaks)
@@ -8,8 +8,8 @@
 5) Export motif matrix and DNA methylation score matrix (exportMMPFM)
 6) Get context-independent peaks along with DNA methylation profiles (commonPeaks & commonPeakResult)
 7) Get context-dependent peaks along with DNA methylation profiles (exclusivePeaks & exclusivePeakResult)
-8) Form a intersected matrix between two lists of peak sets along with DNA methylation profiles and <span style="color:red">read enrichments</span>, for interactome and co-binding partner studies (intersectPeakMatrix & intersectPeakMatrixResult)
-9) <span style="color:red">Automatically generate a PDF report for TF co-factors along with motif sequences, DNA methylation (within motif and in 200bp regions) and read enrichments (cofactorReport).<span>
+8) Form a intersected matrix between two lists of peak sets along with DNA methylation profiles and **read enrichments**, for interactome and co-binding partner studies (intersectPeakMatrix & intersectPeakMatrixResult)
+9) **Automatically generate a PDF report for TF co-factors along with motif sequences, DNA methylation (within motif and in 200bp regions) and read enrichments (cofactorReport).**
 10) Plot the TFBS distribution in a given list of peak sets (motifDistrib & plotDistrib)
 11) Annotate peak genomic locations (genomeAnnotate)
 12) Annotate ontologies of target genes by a peak set (greatAnnotate)
