@@ -8,7 +8,7 @@
 
 TFregulomeR-dev
 
-Version: 1.0.9
+Version: 1.1.0
 
 [![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
@@ -21,13 +21,18 @@ Version: 1.0.9
 
 #### This repository is for TFregulomeR development release
 
-#### Current TFregulomeR development version: 1.0.9 (Updated on 25 July 2019).
+#### Current TFregulomeR development version: 1.1.0 (Updated on 25 July 2019).
 
 #### For stable release, please visit [TFregulomeR](https://github.com/benoukraflab/TFregulomeR)
 
 -------
 
-## Current Functionalities v1.0.9
+## Documentation
+You can check detailed package instructions in [Vignettes](https://linquynus.github.io)
+
+-------
+
+## Current Functionalities v1.1.0
 ### Click [here](./inst/update_notes/functionality_update.md) for functionality update notes
 
 1) Browse the TFregulomeR data warehouse (TFBSBrowser)
@@ -58,7 +63,7 @@ TFregulomeR data compendium version: 1.1.0
 | ChIP-seq experiments    | 3891   |
 | Unique TF     | 415   |
 | TFBS with DNA methylation records    | 655   |
-| Species     | human   |
+| Species     | human (hg38)  |
 | Organ   | stem_cell, blood_and_lymph, connective_tissue, colorectum, brain, bone, stomach, prostate, breast, pancreas, skin, kidney, lung, eye, esophagus, heart, muscle, uterus, spleen, cervix, testis, liver, adrenal_gland, neck_and_mouth, pleura, ovary, thymus, fallopian, vagina   |
 | Sample type | primary_cells, cell_line, tissue
 | Cell or tissue | 414 |
@@ -121,11 +126,6 @@ install.packages("devtools")
 devtools::install_github("linquynus/TFregulomeR-dev")
 ```
 The step above will automatically install the required packages. However, you still need to install optional packages if you opt to use the functions such as `greatAnnotate()`, `genomeAnnotate()` and `toTFBSTools()`.
-
--------
-
-## Documentation
-You can check detailed package instructions in [Vignettes](https://linquynus.github.io)
 
 -------
 

@@ -1,4 +1,4 @@
-## Current Functionalities v1.0.9
+## Current Functionalities v1.1.0
 ### New features compared to last version v1.0.0 are highlighted in bold font
 
 1) Browse the TFregulomeR data warehouse (TFBSBrowser)
