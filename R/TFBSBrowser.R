@@ -112,7 +112,10 @@ TFBSBrowser <- function(species, organ, sample_type, cell_tissue_name,
                                                         "description",
                                                         "disease_state",
                                                         "TF","source","source_ID",
-                                                        "peak_num","peak_with_motif_num")]
+                                                        "peak_num",
+                                                        "peak_with_motif_num",
+                                                        "Consistent_with_HOCOMOCO_JASPAR",
+                                                        "Ncor_between_MEME_ChIP_and_HOMER")]
       tfbs_num <- nrow(request_content_df_output)
       species_result <- unique(request_content_df_output$species)
       species_num <- length(species_result)

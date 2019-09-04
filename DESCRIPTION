@@ -7,7 +7,7 @@ Authors@R: c(person("Quy Xiao Xuan", "Lin", email = "linquyzju@gmail.com", role 
              person("Denis", "Thieffry", email = "denis.thieffry@ens.fr", role = "ctb"),
              person("Sudhakar", "Jha", email = "csisjha@nus.edu.sg", role = "ctb"),
               person("Touati", "Benoukraf", email = "tbenoukraf@mun.ca", role = "aut"))
-Depends: R (>= 3.3.0), methods
+Depends: R (>= 3.6.0), methods
 Imports: graphics,
          grDevices,
          utils,
