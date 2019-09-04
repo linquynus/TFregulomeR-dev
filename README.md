@@ -8,7 +8,7 @@
 
 TFregulomeR-dev
 
-Version: 1.1.0
+Version: 1.1.1
 
 [![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
@@ -21,7 +21,7 @@ Version: 1.1.0
 
 #### This repository is for TFregulomeR development release
 
-#### Current TFregulomeR development version: 1.1.0 (Updated on 25 July 2019).
+#### Current TFregulomeR development version: 1.1.1 (Updated on 4 September 2019).
 
 #### For stable release, please visit [TFregulomeR](https://github.com/benoukraflab/TFregulomeR)
 
@@ -32,7 +32,7 @@ You can check detailed package instructions in [Vignettes](https://linquynus.git
 
 -------
 
-## Current Functionalities v1.1.0
+## Current Functionalities v1.1.1
 ### Click [here](./inst/update_notes/functionality_update.md) for functionality update notes
 
 1) Browse the TFregulomeR data warehouse (TFBSBrowser)
@@ -55,7 +55,7 @@ You can check detailed package instructions in [Vignettes](https://linquynus.git
 
  ### Click [here](./inst/update_notes/compendium_update.md) for TFregulomeR compendium update notes
 
-TFregulomeR data compendium version: 1.1.0
+TFregulomeR data compendium version: 1.1.1
 
 | Item     | Count |
 | :---------:|:------:|
