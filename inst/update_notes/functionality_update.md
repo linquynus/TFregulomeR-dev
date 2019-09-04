@@ -1,6 +1,6 @@
 ## Current Functionalities v1.1.1 (Development version)
 ### What's new compared to last stable version v1.1.0 
-1) More detailed information about motifs, such as consistency with exisiting database and correlation between different motif caller, added in the output of _TFBSBrowser_.
+1) More detailed information about motifs, such as consistency with exisiting database and correlation between different motif callers, added in the output of _TFBSBrowser_.
 2) Fixed some bugs in function _cofactorReport_.
 
 
