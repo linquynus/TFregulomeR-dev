@@ -1,7 +1,7 @@
 library(TFregulomeR)
 library(gplots)
 
-MAFF_TFBS <- TFBSBrowser(tf = "MAFF")
+MAFF_TFBS <- dataBrowser(tf = "MAFF")
 # plot (Meth)Motif logos for MAFF in all cell types (Figure 3A)
 for (i in MAFF_TFBS$ID){
     motif_i <- searchMotif(id = i)
@@ -31,7 +31,7 @@ K562_MAFF_exclu_res <- exclusivePeakResult(exclusivePeaks = K562_MAFF_exclu,
 K562_MAFF_exclu_peaks <- K562_MAFF_exclu_res$exclusive_peak_list$MM1_HSA_K562_MAFF_exclusive_peaks
 
 # cofactors in K562 exclusive MAFF targets
-K562_TFBS <- TFBSBrowser(cell_tissue_name = "K562")
+K562_TFBS <- dataBrowser(cell_tissue_name = "K562")
 K562_MAFF_exclu_peaks_intersect <- intersectPeakMatrix(user_peak_list_x = list(K562_MAFF_exclu_peaks),
                                                        user_peak_x_id = "MM1_HSA_K562_MAFF",
                                                        peak_id_y = K562_TFBS$ID,
@@ -73,7 +73,7 @@ HeLa_MAFF_exclu_res <- exclusivePeakResult(exclusivePeaks = HeLa_MAFF_exclu,
 HeLa_MAFF_exclu_res_peaks <- HeLa_MAFF_exclu_res$exclusive_peak_list$`MM1_HSA_HeLa-S3_MAFF_exclusive_peaks`
 
 # cofactors in HeLa-S3 exclusive MAFF targets
-HeLa_TFBS <- TFBSBrowser(cell_tissue_name = "HeLa-S3")
+HeLa_TFBS <- dataBrowser(cell_tissue_name = "HeLa-S3")
 HeLa_MAFF_exclu_peaks_cofactor <- intersectPeakMatrix(user_peak_list_x = list(HeLa_MAFF_exclu_res_peaks),
                                                        user_peak_x_id = "MM1_HSA_HeLa-S3_MAFF",
                                                        peak_id_y = HeLa_TFBS$ID,
@@ -98,7 +98,7 @@ HepG2_MAFF_exclu_res <- exclusivePeakResult(exclusivePeaks = HepG2_MAFF_exclu,
 HepG2_MAFF_exclu_peaks <- HepG2_MAFF_exclu_res$exclusive_peak_list$MM1_HSA_HepG2_MAFF_exclusive_peaks
 
 # cofactors in HepG2 exclusive MAFF targets
-HepG2_TFBS <- TFBSBrowser(cell_tissue_name = "HepG2")
+HepG2_TFBS <- dataBrowser(cell_tissue_name = "HepG2")
 HepG2_MAFF_exclu_peaks_cofactor <- intersectPeakMatrix(user_peak_list_x = list(HepG2_MAFF_exclu_peaks),
                                                         user_peak_x_id = "MM1_HSA_HepG2_MAFF",
                                                         peak_id_y = HepG2_TFBS$ID,

@@ -3,7 +3,7 @@ library(gplots)
 
 # ATF3 (Meth)Motif in five cell types (Figure 4A)
 
-ATF3_TFBS <- TFBSBrowser(tf = "ATF3")
+ATF3_TFBS <- dataBrowser(tf = "ATF3")
 for (i in ATF3_TFBS$ID){
     motif_i <- searchMotif(id = i)
     plotLogo(MM_object = motif_i)
@@ -12,7 +12,7 @@ for (i in ATF3_TFBS$ID){
 ######################## cofactors in ATF3 binding loci and genomic annotations (Figure 4B) ########################
 
 # HCT116
-hct116_tfbs <- TFBSBrowser(cell_tissue_name = "HCT116")
+hct116_tfbs <- dataBrowser(cell_tissue_name = "HCT116")
 hct116_tfbs_no_ATF3 <- hct116_tfbs$ID[!(hct116_tfbs$ID %in% "MM1_HSA_HCT116_ATF3")]
 atf3_intersect <- intersectPeakMatrix(peak_id_x = "MM1_HSA_HCT116_ATF3",
                                      motif_only_for_id_x =FALSE,
@@ -49,7 +49,7 @@ dev.off()
 
 # K562
 
-k562_tfbs <- TFBSBrowser(cell_tissue_name = "K562")
+k562_tfbs <- dataBrowser(cell_tissue_name = "K562")
 k562_tfbs_no_atf3 <- k562_tfbs$ID[!(k562_tfbs$ID %in% "MM1_HSA_K562_ATF3") ]
 k562_atf3_intersect <- intersectPeakMatrix(peak_id_x = "MM1_HSA_K562_ATF3",
                                           motif_only_for_id_x =FALSE,
@@ -82,7 +82,7 @@ abline(v=log10(1000), col="red")
 dev.off()
 
 # GM12878
-gm_tfbs <- TFBSBrowser(cell_tissue_name = "GM12878")
+gm_tfbs <- dataBrowser(cell_tissue_name = "GM12878")
 gm_tfbs_no_atf3 <- gm_tfbs$ID[!(gm_tfbs$ID %in% "MM1_HSA_GM12878_ATF3")]
 gm_atf3_intersect <- intersectPeakMatrix(peak_id_x = "MM1_HSA_GM12878_ATF3",
                                         motif_only_for_id_x = FALSE,
@@ -116,7 +116,7 @@ abline(v=log10(1000), col="red")
 dev.off()
 
 # H1-hESC
-h1_tfbs <- TFBSBrowser(cell_tissue_name = "H1-hESC")
+h1_tfbs <- dataBrowser(cell_tissue_name = "H1-hESC")
 h1_tfbs_no_atf3 <- h1_tfbs$ID[!(h1_tfbs$ID %in% "MM1_HSA_H1-hESC_ATF3")]
 h1_tfbs_intersect <- intersectPeakMatrix(peak_id_x = "MM1_HSA_H1-hESC_ATF3",
                                         motif_only_for_id_x = FALSE,
@@ -151,7 +151,7 @@ dev.off()
 
 
 # HepG2
-hegp2_tfbs <- TFBSBrowser(cell_tissue_name = "HepG2")
+hegp2_tfbs <- dataBrowser(cell_tissue_name = "HepG2")
 hegp2_tfbs_no_atf3 <- hegp2_tfbs$ID[!(hegp2_tfbs$ID %in% "MM1_HSA_HepG2_ATF3")]
 hegp2_atf3_intersect <- intersectPeakMatrix(peak_id_x = "MM1_HSA_HepG2_ATF3",
                                            motif_only_for_id_x = FALSE,

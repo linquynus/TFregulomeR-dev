@@ -2,7 +2,7 @@ library(TFregulomeR)
 library(gplots)
 
 # CEBPB motifs in TFregulomeR
-CEBPB_record <- TFBSBrowser(tf = "CEBPB")
+CEBPB_record <- dataBrowser(tf = "CEBPB")
 
 # (Meth)Motif logo for all CEBPB in TFregulomeR compendium for Figure S1
 for (id in CEBPB_record$ID){
@@ -68,7 +68,7 @@ plot(x=seq(1,16,1), y = sub_ensemble_peak_num, type = "l",
 dev.off()
 
 # cofactor analysis of 16 K562 CEBPB sub-ensembles for Figure 2B
-K562_TFBS <- TFBSBrowser(cell_tissue_name = "K562")
+K562_TFBS <- dataBrowser(cell_tissue_name = "K562")
 K562_CEBPB_16_subsets_list <- list()
 for (i in seq(1,16,1)){
     K562_CEBPB_16_subsets_i <- K562_CEBPB_all_peaks[which(K562_CEBPB_all_peaks$sum==i),]

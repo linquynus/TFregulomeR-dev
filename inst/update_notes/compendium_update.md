@@ -1,5 +1,5 @@
-## Current TFBSs in TFregulomeR compendium v1.1.1
-What's new in the version v1.1.1:
+## Current TFBSs in TFregulomeR compendium v1.2.0
+What's new in the version v1.2.0 - 6 September 2019:
 
 1) More detailed information about motifs added: i) consistency with the existing databases (HOCOMOCO and JASPAR); ii) correlation of the motifs identified by different motif callers, MEME-ChIP and HOMER, if not consistent or not recorded in the databases.
 

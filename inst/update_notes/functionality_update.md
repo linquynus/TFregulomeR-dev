@@ -1,7 +1,9 @@
-## Current Functionalities v1.1.1 (Development version)
+## Current Functionalities v1.2.0 (Development version)
 ### What's new compared to last stable version v1.1.0 
 1) More detailed information about motifs, such as consistency with exisiting database and correlation between different motif callers, added in the output of _TFBSBrowser_.
 2) Fixed some bugs in function _cofactorReport_.
+3) Changed the function name _TFBSBrowser_ to _dataBrowser_
+4) Added y axis and number of peaks with motif in the output of _plotLogo_.
 
 
 
