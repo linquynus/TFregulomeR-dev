@@ -43,12 +43,12 @@ source, TF source ID, number of peaks and number of peaks with motif.
 In TFregulomeR project, we
 used MEME-ChIP to perform motif de novo discovery in each ChIP-seq. Highly and centrally enriched 
 motifs were selected and compared with the existing TFBS databases, such as HOCOMOCO and JASPAR. 
-89 highly enriched motifs were not consistent with the TFBS databases. it might
+91 highly enriched motifs were not consistent with the TFBS databases. it might
 be due to the fact that in those cell types, the given TFs are indirectly recruited to genome, 
 and/or that highly abundant presence of cohesion and polycomb group proteins masks the motif 
 enrichment of the ChIP’ed TF. 
 Besides, 136 motifs were not recorded for their corresponding TFs in the databases. 
-In order to confirm the reliability of these 225 motifs, we used HOMER to perform a de novo motif 
+In order to confirm the reliability of these 227 motifs, we used HOMER to perform a de novo motif 
 discovery again. Motif results by HOMER were compared with those by MEME-ChIP and their similarity
 were measured by normalised Pearson correlation coefficient using compare-matrices function in 
 RSAT with the formula: Ncor = cor * w / w_smaller, 
