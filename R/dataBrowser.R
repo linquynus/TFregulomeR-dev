@@ -20,14 +20,14 @@ dataBrowser <- function(species, organ, sample_type, cell_tissue_name,
 {
   # make an appropriate API url
   if (missing(TFregulome_url)){
-    TFregulome_url <- "http://bioinfo-csi.nus.edu.sg/methmotif/api/table_query/"
+    TFregulome_url <- "http://bioinfo-csi.nus.edu.sg/methmotif/api/beta/table_query/"
   } else if (endsWith(TFregulome_url, suffix = "/index.php")==TRUE){
     TFregulome_url <- gsub("index.php", "", TFregulome_url)
-    TFregulome_url <- paste0(TFregulome_url, "api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "api/beta/table_query/")
   } else if (endsWith(TFregulome_url, suffix = "/")==TRUE){
-    TFregulome_url <- paste0(TFregulome_url, "api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "api/beta/table_query/")
   } else {
-    TFregulome_url <- paste0(TFregulome_url, "/api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "/api/beta/table_query/")
   }
 
   query_index <- rep(0,7)

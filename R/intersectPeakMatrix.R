@@ -85,14 +85,14 @@ intersectPeakMatrix <- function(peak_id_x,
 
   # make an appropriate API url
   if (missing(TFregulome_url)){
-    TFregulome_url <- "http://bioinfo-csi.nus.edu.sg/methmotif/api/table_query/"
+    TFregulome_url <- "http://bioinfo-csi.nus.edu.sg/methmotif/api/beta/table_query/"
   } else if (endsWith(TFregulome_url, suffix = "/index.php")==TRUE){
     TFregulome_url <- gsub("index.php", "", TFregulome_url)
-    TFregulome_url <- paste0(TFregulome_url, "api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "api/beta/table_query/")
   } else if (endsWith(TFregulome_url, suffix = "/")==TRUE){
-    TFregulome_url <- paste0(TFregulome_url, "api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "api/beta/table_query/")
   } else {
-    TFregulome_url <- paste0(TFregulome_url, "/api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "/api/beta/table_query/")
   }
 
   message("TFregulomeR::intersectPeakMatrix() starting ... ...")
@@ -125,7 +125,7 @@ intersectPeakMatrix <- function(peak_id_x,
     message("... loading TFBS(s) from TFregulomeR now")
     for (i in peak_id_x)
     {
-      peak_i <- suppressMessages(loadPeaks(id = i, includeMotifOnly = motif_only_for_id_x, TFregulome_url = gsub("api/table_query/", "", TFregulome_url)))
+      peak_i <- suppressMessages(loadPeaks(id = i, includeMotifOnly = motif_only_for_id_x, TFregulome_url = gsub("api/beta/table_query/", "", TFregulome_url)))
       if (is.null(peak_i))
       {
         message(paste0("... ... NO peak file for your id '", i,"'."))
@@ -185,7 +185,7 @@ intersectPeakMatrix <- function(peak_id_x,
         peak_list_x_count <- peak_list_x_count + 1
         peak_list_x_all[[peak_list_x_count]] <- peak_i
         # test if user input id i match any TFregulomeR ID
-        motif_matrix_i <- suppressMessages(searchMotif(id = user_peak_x_id[i], TFregulome_url = gsub("api/table_query/", "", TFregulome_url)))
+        motif_matrix_i <- suppressMessages(searchMotif(id = user_peak_x_id[i], TFregulome_url = gsub("api/beta/table_query/", "", TFregulome_url)))
         if (is.null(motif_matrix_i))
         {
           is_x_TFregulome <- c(is_x_TFregulome, FALSE)
@@ -226,7 +226,7 @@ intersectPeakMatrix <- function(peak_id_x,
     for (i in peak_id_y)
     {
       peak_i <- suppressMessages(loadPeaks(id = i, includeMotifOnly = motif_only_for_id_y,
-                                           TFregulome_url = gsub("api/table_query/", "", TFregulome_url)))
+                                           TFregulome_url = gsub("api/beta/table_query/", "", TFregulome_url)))
       if (is.null(peak_i))
       {
         message(paste0("... ... NO peak file for your id '", i,"'."))
@@ -286,7 +286,7 @@ intersectPeakMatrix <- function(peak_id_x,
         peak_list_y_count <- peak_list_y_count + 1
         peak_list_y_all[[peak_list_y_count]] <- peak_i
         # test if user input id i match any TFregulomeR ID
-        motif_matrix_i <- suppressMessages(searchMotif(id = user_peak_y_id[i], TFregulome_url = gsub("api/table_query/", "", TFregulome_url)))
+        motif_matrix_i <- suppressMessages(searchMotif(id = user_peak_y_id[i], TFregulome_url = gsub("api/beta/table_query/", "", TFregulome_url)))
         if (is.null(motif_matrix_i))
         {
           is_y_TFregulome <- c(is_y_TFregulome, FALSE)

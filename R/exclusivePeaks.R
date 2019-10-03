@@ -65,14 +65,14 @@ exclusivePeaks <- function(target_peak_id,
 
   # make an appropriate API url
   if (missing(TFregulome_url)){
-    TFregulome_url <- "http://bioinfo-csi.nus.edu.sg/methmotif/api/table_query/"
+    TFregulome_url <- "http://bioinfo-csi.nus.edu.sg/methmotif/api/beta/table_query/"
   } else if (endsWith(TFregulome_url, suffix = "/index.php")==TRUE){
     TFregulome_url <- gsub("index.php", "", TFregulome_url)
-    TFregulome_url <- paste0(TFregulome_url, "api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "api/beta/table_query/")
   } else if (endsWith(TFregulome_url, suffix = "/")==TRUE){
-    TFregulome_url <- paste0(TFregulome_url, "api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "api/beta/table_query/")
   } else {
-    TFregulome_url <- paste0(TFregulome_url, "/api/table_query/")
+    TFregulome_url <- paste0(TFregulome_url, "/api/beta/table_query/")
   }
 
   message("TFregulomeR::exclusivePeaks() starting ... ...")
@@ -106,7 +106,7 @@ exclusivePeaks <- function(target_peak_id,
     for (i in target_peak_id)
     {
       peak_i <- suppressMessages(loadPeaks(id = i, includeMotifOnly = motif_only_for_target_peak,
-                                           TFregulome_url = gsub("api/table_query/", "", TFregulome_url)))
+                                           TFregulome_url = gsub("api/beta/table_query/", "", TFregulome_url)))
       if (is.null(peak_i))
       {
         message(paste0("... ... NO peak file for your id '", i,"'."))
@@ -167,7 +167,7 @@ exclusivePeaks <- function(target_peak_id,
         target_peak_list_all[[target_list_count]] <- peak_i
         # test if user input id i match any TFregulomeR ID
         motif_matrix_i <- suppressMessages(searchMotif(id = user_target_peak_id[i],
-                                                       TFregulome_url = gsub("api/table_query/", "", TFregulome_url)))
+                                                       TFregulome_url = gsub("api/beta/table_query/", "", TFregulome_url)))
         if (is.null(motif_matrix_i))
         {
           is_taregt_TFregulome <- c(is_taregt_TFregulome, FALSE)
@@ -208,7 +208,7 @@ exclusivePeaks <- function(target_peak_id,
     for (i in excluded_peak_id)
     {
       peak_i <- suppressMessages(loadPeaks(id = i, includeMotifOnly = motif_only_for_excluded_peak,
-                                           TFregulome_url = gsub("api/table_query/", "", TFregulome_url)))
+                                           TFregulome_url = gsub("api/beta/table_query/", "", TFregulome_url)))
       if (is.null(peak_i))
       {
         message(paste0("... ... NO peak file for your id '", i,"'."))
@@ -253,7 +253,7 @@ exclusivePeaks <- function(target_peak_id,
         excluded_list_count <- excluded_list_count + 1
         excluded_peak_list_all[[excluded_list_count]] <- peak_i_sub
         # test if user input id i match any TFregulomeR ID
-        motif_matrix_i <- suppressMessages(searchMotif(id = user_excluded_peak_id[i], TFregulome_url = gsub("api/table_query/", "", TFregulome_url)))
+        motif_matrix_i <- suppressMessages(searchMotif(id = user_excluded_peak_id[i], TFregulome_url = gsub("api/beta/table_query/", "", TFregulome_url)))
         if (is.null(motif_matrix_i))
         {
           is_excluded_TFregulome <- c(is_excluded_TFregulome, FALSE)
