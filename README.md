@@ -8,7 +8,9 @@
 
 TFregulomeR-dev
 
-Version: 1.2.0
+Stable version @ master: v1.2.0 (human only)
+
+Development version @ with_mouse_version: v1.99.0 (human and mouse)
 
 [![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
@@ -21,7 +23,9 @@ Version: 1.2.0
 
 #### This repository is for TFregulomeR development release
 
-#### Current TFregulomeR development version: 1.2.0 (Updated on 6 September 2019).
+#### Current TFregulomeR stable version @ master: 1.2.0 (Updated on 6 September 2019) - human only
+
+#### Current TFregulomeR development version @ with_mouse_version: 1.99.0 (Updated on 4 October 2019) - human and mouse
 
 #### For stable release, please visit [TFregulomeR](https://github.com/benoukraflab/TFregulomeR)
 
@@ -32,7 +36,7 @@ You can check detailed package instructions in [Vignettes](https://linquynus.git
 
 -------
 
-## Current Functionalities v1.2.0
+## Current Functionalities v1.99.0
 ### Click [here](./inst/update_notes/functionality_update.md) for functionality update notes
 
 1) Browse the TFregulomeR data warehouse (dataBrowser)
@@ -51,22 +55,21 @@ You can check detailed package instructions in [Vignettes](https://linquynus.git
 
 -------
 
-## Current TFBSs in TFregulomeR compendium
+## Current TFBSs in TFregulomeR compendium 
 
  ### Click [here](./inst/update_notes/compendium_update.md) for TFregulomeR compendium update notes
 
-TFregulomeR data compendium version: 1.2.0
+TFregulomeR data compendium version: 1.99.0
 
 | Item     | Count |
 | :---------:|:------:|
-| PWM     | 1468   |
-| ChIP-seq experiments    | 3891   |
-| Unique TF     | 415   |
-| PWM with DNA methylation records    | 655   |
-| Species     | human (hg38)  |
-| Organ   | stem_cell, blood_and_lymph, connective_tissue, colorectum, brain, bone, stomach, prostate, breast, pancreas, skin, kidney, lung, eye, esophagus, heart, muscle, uterus, spleen, cervix, testis, liver, adrenal_gland, neck_and_mouth, pleura, ovary, thymus, fallopian, vagina   |
+| PWM     | 2333   |
+| Unique TF     | 676   |
+| PWM with DNA methylation records    | 679   |
+| Species     | human (hg38) and mouse (mm10)  |
+| Organ   | brain, stem_cell, blood_and_lymph, connective_tissue, liver, colorectum, muscle, bone, stomach, prostate, pancreas, skin, eye, breast, intestine, kidney, lung, esophagus, heart, testis, uterus, spleen, limb, body, cervix, placenta, undefined, adrenal_gland, neck_and_mouth, head, ovary, pleura, thymus, fallopian, vagina   |
 | Sample type | primary_cells, cell_line, tissue
-| Cell or tissue | 414 |
+| Cell or tissue | 721 |
 | Disease state | normal, tumor, Simpson_Golabi_Behmel_syndrome, progeria, metaplasia, unknown, immortalized, premetastatic|
 | Source | GTRD, MethMotif | 
 
@@ -112,6 +115,8 @@ The scripts of case studies used in our manuscript are available as below.
     - [rbokeh](https://cran.r-project.org/web/packages/rbokeh/index.html) (>= 0.5.0): only required when users opt to export an intuitive HTML report in `greatAnnotate()`
     - [TxDb.Hsapiens.UCSC.hg38.knownGene](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg38.knownGene.html) (>= 3.4.0): only required when users opt to annotate hg38 peak locations in `genomeAnnotate()`
     - [TxDb.Hsapiens.UCSC.hg19.knownGene](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg19.knownGene.html) (>= 3.2.2): only required when users opt to annotate hg19 peak locations in `genomeAnnotate()`
+    - [TxDb.Mmusculus.UCSC.mm10.knownGene](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Mmusculus.UCSC.mm10.knownGene.html) (>= 3.4.4): only required when users opt to annotate mm10 peak locations in `genomeAnnotate()`
+    - [TxDb.Mmusculus.UCSC.mm9.knownGene](http://bioconductor.org/packages/release/data/annotation/html/TxDb.Mmusculus.UCSC.mm9.knownGene.html) (>= 3.2.2): only required when users opt to annotate mm9 peak locations in `genomeAnnotate()`
     - [TFBSTools](http://bioconductor.org/packages/release/bioc/html/TFBSTools.html) (>= 1.20.0): only required in `toTFBSTools()`
 
 #### Install
@@ -121,7 +126,10 @@ In R console,
 ```r
 # if you have not installed "devtools" package
 install.packages("devtools")
-devtools::install_github("linquynus/TFregulomeR-dev")
+# install stable version 1.2.0 linking to human data only
+devtools::install_github("linquynus/TFregulomeR-dev", ref="master")
+# install development version 1.99.0 linking to human and mouse data
+devtools::install_github("linquynus/TFregulomeR-dev", ref="with_mouse_version")
 ```
 The step above will automatically install the required packages. However, you still need to install optional packages if you opt to use the functions such as `greatAnnotate()`, `genomeAnnotate()` and `toTFBSTools()`.
 

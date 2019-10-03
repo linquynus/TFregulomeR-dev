@@ -1,13 +1,16 @@
-## Current Functionalities v1.2.0 (Development version)
-### What's new compared to last stable version v1.1.0 
+## Current Functionalities v1.99.0 (Development version)
+No new functionality added compared to v1.2.0
+
+
+
+## Previous Stable Version
+
+### What's new in v1.2.0
 1) Changed the function name _TFBSBrowser_ to _dataBrowser_.
 2) More detailed information about motifs, such as consistency with exisiting database and correlation between different motif callers, added in the output of _dataBrowser_.
 3) Fixed some bugs in function _cofactorReport_.
 4) Added y axis and number of peaks with motif in the output of _plotLogo_.
 
-
-
-## Previous Stable Version
 ### Functionalities version 1.1.0 - 31 July 2019
 
 1) Browse the TFregulomeR data warehouse (TFBSBrowser)

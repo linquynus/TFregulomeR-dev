@@ -1,3 +1,5 @@
+Changes in version 1.99.0 (2019-10-04)
++ 865 PWMs in mouse were added.
 Changes in version 1.2.0 (2019-09-06)
 + Changed the function name TFBSBrowser to dataBrowser.
 + More detailed information about motifs, such as consistency with existing database and correlation between different motif callers, added in the output of dataBrowser.
