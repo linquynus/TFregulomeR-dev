@@ -122,7 +122,7 @@ In R console,
 ```r
 # if you have not installed "devtools" package
 install.packages("devtools")
-# install stable version 1.2.0 linking to human data only
+# install development version 1.2.1 linking to human data only
 devtools::install_github("linquynus/TFregulomeR-dev", ref="master")
 # install development version 1.99.0 linking to human and mouse data
 devtools::install_github("linquynus/TFregulomeR-dev", ref="with_mouse_version")
