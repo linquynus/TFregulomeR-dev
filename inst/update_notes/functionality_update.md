@@ -1,13 +1,16 @@
-## Current Functionalities v1.2.0 (Development version)
-### What's new compared to last stable version v1.1.0 
+## Current Functionalities v1.2.1 (Development version) - 25 October 2019
+### What's new compared to last stable version v1.2.0 
+1) Improved the function _greatAnnotate_, which now allows to use peak regions in hg38 directly with rGREAT >= 1.16.1 (no need liftover package).
+
+
+
+## Previous Stable Version
+### Functionalities version 1.2.0 - 6 September 2019
 1) Changed the function name _TFBSBrowser_ to _dataBrowser_.
 2) More detailed information about motifs, such as consistency with exisiting database and correlation between different motif callers, added in the output of _dataBrowser_.
 3) Fixed some bugs in function _cofactorReport_.
 4) Added y axis and number of peaks with motif in the output of _plotLogo_.
 
-
-
-## Previous Stable Version
 ### Functionalities version 1.1.0 - 31 July 2019
 
 1) Browse the TFregulomeR data warehouse (TFBSBrowser)

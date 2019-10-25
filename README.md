@@ -8,9 +8,9 @@
 
 TFregulomeR-dev
 
-Stable version @ master: v1.2.0 (human only)
+Version @ master: v1.2.1 (human only) [<img src="https://www.ymcachicago.org/page/-/kroehler/blog/icon-new-9.jpg" alt="new" width="30"></img>](./inst/update_notes/functionality_update.md)
 
-Development version @ with_mouse_version: v1.99.0 (human and mouse)
+Version @ with_mouse_version: v1.99.0 (human and mouse)
 
 [![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
@@ -23,7 +23,7 @@ Development version @ with_mouse_version: v1.99.0 (human and mouse)
 
 #### This repository is for TFregulomeR development release
 
-#### Current TFregulomeR development version: 1.2.0 (Updated on 6 September 2019).
+#### Current TFregulomeR development version: 1.2.1 (Updated on 25 October 2019).
 
 #### For stable release, please visit [TFregulomeR](https://github.com/benoukraflab/TFregulomeR)
 
@@ -34,7 +34,7 @@ You can check detailed package instructions in [Vignettes](https://linquynus.git
 
 -------
 
-## Current Functionalities v1.2.0
+## Current Functionalities v1.2.1
 ### Click [here](./inst/update_notes/functionality_update.md) for functionality update notes
 
 1) Browse the TFregulomeR data warehouse (dataBrowser)
@@ -109,8 +109,7 @@ The scripts of case studies used in our manuscript are available as below.
 
 2) Optional packages: the packages below are optional since they are required only in some functions or some options in a function
 
-    - [rGREAT](https://bioconductor.org/packages/release/bioc/html/rGREAT.html) (>= 1.14.0): only requried in `greatAnnotate()`
-    - [liftOver](https://bioconductor.org/packages/release/workflows/html/liftOver.html) (>= 1.4.0): only required when users use hg38 peaks in `greatAnnotate()`. Since GREAT analysis doesn't support hg38, hg38 peaks will be converted to hg19 using liftOver.
+    - [rGREAT](https://bioconductor.org/packages/release/bioc/html/rGREAT.html) (>= 1.16.1): only requried in `greatAnnotate()`
     - [rbokeh](https://cran.r-project.org/web/packages/rbokeh/index.html) (>= 0.5.0): only required when users opt to export an intuitive HTML report in `greatAnnotate()`
     - [TxDb.Hsapiens.UCSC.hg38.knownGene](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg38.knownGene.html) (>= 3.4.0): only required when users opt to annotate hg38 peak locations in `genomeAnnotate()`
     - [TxDb.Hsapiens.UCSC.hg19.knownGene](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg19.knownGene.html) (>= 3.2.2): only required when users opt to annotate hg19 peak locations in `genomeAnnotate()`
