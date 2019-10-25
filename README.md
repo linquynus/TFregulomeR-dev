@@ -8,9 +8,9 @@
 
 TFregulomeR-dev
 
-Stable version @ master: v1.2.0 (human only)
+Version @ master: v1.2.1 (human only)
 
-Development version @ with_mouse_version: v1.99.0 (human and mouse)
+Version @ with_mouse_version: v1.99.0 (human and mouse)
 
 [![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
@@ -23,7 +23,7 @@ Development version @ with_mouse_version: v1.99.0 (human and mouse)
 
 #### This repository is for TFregulomeR development release
 
-#### Current TFregulomeR stable version @ master: 1.2.0 (Updated on 6 September 2019) - human only
+#### Current TFregulomeR development version @ master: 1.2.1 (Updated on 25 October 2019) - human only
 
 #### Current TFregulomeR development version @ with_mouse_version: 1.99.0 (Updated on 4 October 2019) - human and mouse
 
@@ -126,7 +126,7 @@ In R console,
 ```r
 # if you have not installed "devtools" package
 install.packages("devtools")
-# install stable version 1.2.0 linking to human data only
+# install stable version 1.2.1 linking to human data only
 devtools::install_github("linquynus/TFregulomeR-dev", ref="master")
 # install development version 1.99.0 linking to human and mouse data
 devtools::install_github("linquynus/TFregulomeR-dev", ref="with_mouse_version")
