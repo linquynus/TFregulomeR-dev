@@ -36,7 +36,7 @@ You can check detailed package instructions in [Vignettes](https://linquynus.git
 
 -------
 
-## Current Functionalities v1.99.0
+## Current Functionalities v1.99.1
 ### Click [here](./inst/update_notes/functionality_update.md) for functionality update notes
 
 1) Browse the TFregulomeR data warehouse (dataBrowser)
@@ -110,8 +110,7 @@ The scripts of case studies used in our manuscript are available as below.
 
 2) Optional packages: the packages below are optional since they are required only in some functions or some options in a function
 
-    - [rGREAT](https://bioconductor.org/packages/release/bioc/html/rGREAT.html) (>= 1.14.0): only requried in `greatAnnotate()`
-    - [liftOver](https://bioconductor.org/packages/release/workflows/html/liftOver.html) (>= 1.4.0): only required when users use hg38 peaks in `greatAnnotate()`. Since GREAT analysis doesn't support hg38, hg38 peaks will be converted to hg19 using liftOver.
+    - [rGREAT](https://bioconductor.org/packages/release/bioc/html/rGREAT.html) (>= 1.16.1): only requried in `greatAnnotate()`
     - [rbokeh](https://cran.r-project.org/web/packages/rbokeh/index.html) (>= 0.5.0): only required when users opt to export an intuitive HTML report in `greatAnnotate()`
     - [TxDb.Hsapiens.UCSC.hg38.knownGene](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg38.knownGene.html) (>= 3.4.0): only required when users opt to annotate hg38 peak locations in `genomeAnnotate()`
     - [TxDb.Hsapiens.UCSC.hg19.knownGene](https://bioconductor.org/packages/release/data/annotation/html/TxDb.Hsapiens.UCSC.hg19.knownGene.html) (>= 3.2.2): only required when users opt to annotate hg19 peak locations in `genomeAnnotate()`
@@ -128,7 +127,7 @@ In R console,
 install.packages("devtools")
 # install stable version 1.2.1 linking to human data only
 devtools::install_github("linquynus/TFregulomeR-dev", ref="master")
-# install development version 1.99.0 linking to human and mouse data
+# install development version 1.99.1 linking to human and mouse data
 devtools::install_github("linquynus/TFregulomeR-dev", ref="with_mouse_version")
 ```
 The step above will automatically install the required packages. However, you still need to install optional packages if you opt to use the functions such as `greatAnnotate()`, `genomeAnnotate()` and `toTFBSTools()`.
