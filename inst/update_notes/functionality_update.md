@@ -1,11 +1,15 @@
-## Current Functionalities v1.99.0 (Development version)
-No new functionality added compared to v1.2.0
+## Current Functionalities v1.99.1 (Development version) - 1 November 2019
+
+### What's new compared to last version v1.99.0 
+1) Improved the function _greatAnnotate_, which now allows to use peak regions in hg38 directly with rGREAT >= 1.16.1 (no need liftover package).
 
 
 
 ## Previous Stable Version
+### What's new in v1.99.0 - 4 October 2019
+1) No new functionality added compared to v1.2.0
 
-### What's new in v1.2.0
+### What's new in v1.2.0 - 6 September 2019
 1) Changed the function name _TFBSBrowser_ to _dataBrowser_.
 2) More detailed information about motifs, such as consistency with exisiting database and correlation between different motif callers, added in the output of _dataBrowser_.
 3) Fixed some bugs in function _cofactorReport_.

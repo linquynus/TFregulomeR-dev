@@ -8,9 +8,9 @@
 
 TFregulomeR-dev
 
-Version @ master: v1.2.1 (human only)
+Version @ master: v1.2.1 (human only) [<img src="https://www.ymcachicago.org/page/-/kroehler/blog/icon-new-9.jpg" alt="new" width="30"></img>](./inst/update_notes/functionality_update.md)
 
-Version @ with_mouse_version: v1.99.0 (human and mouse)
+Version @ with_mouse_version: v1.99.1 (human and mouse) [<img src="https://www.ymcachicago.org/page/-/kroehler/blog/icon-new-9.jpg" alt="new" width="30"></img>](./inst/update_notes/functionality_update.md)
 
 [![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
@@ -25,7 +25,7 @@ Version @ with_mouse_version: v1.99.0 (human and mouse)
 
 #### Current TFregulomeR development version @ master: 1.2.1 (Updated on 25 October 2019) - human only
 
-#### Current TFregulomeR development version @ with_mouse_version: 1.99.0 (Updated on 4 October 2019) - human and mouse
+#### Current TFregulomeR development version @ with_mouse_version: 1.99.1 (Updated on 1 November 2019) - human and mouse
 
 #### For stable release, please visit [TFregulomeR](https://github.com/benoukraflab/TFregulomeR)
 
