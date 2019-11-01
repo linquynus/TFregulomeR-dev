@@ -10,7 +10,7 @@ TFregulomeR-dev
 
 Version @ master: v1.2.1 (human only) [<img src="https://www.ymcachicago.org/page/-/kroehler/blog/icon-new-9.jpg" alt="new" width="30"></img>](./inst/update_notes/functionality_update.md)
 
-Version @ with_mouse_version: v1.99.0 (human and mouse)
+Version @ with_mouse_version: v1.99.1 (human and mouse) [<img src="https://www.ymcachicago.org/page/-/kroehler/blog/icon-new-9.jpg" alt="new" width="30"></img>](./inst/update_notes/functionality_update.md)
 
 [![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
@@ -124,7 +124,7 @@ In R console,
 install.packages("devtools")
 # install development version 1.2.1 linking to human data only
 devtools::install_github("linquynus/TFregulomeR-dev", ref="master")
-# install development version 1.99.0 linking to human and mouse data
+# install development version 1.99.1 linking to human and mouse data
 devtools::install_github("linquynus/TFregulomeR-dev", ref="with_mouse_version")
 ```
 The step above will automatically install the required packages. However, you still need to install optional packages if you opt to use the functions such as `greatAnnotate()`, `genomeAnnotate()` and `toTFBSTools()`.
