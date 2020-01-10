@@ -1,3 +1,7 @@
+Changes in version 1.2.2 (2020-01-10)
++ Modified the functions intersectPeakMatrix and intersectPeakMatrixResult to allow profiling of users' input external signals during pair-wise comparison analysis.
++ Added a new function interactome3D which could directly generate a dynamic 3D interface report showing TF interactome coupled with CpG methylation and users' input external signal values.
+
 Changes in version 1.2.1 (2019-10-25)
 + Changed the function greatAnnotate which allows to directly use regions in hg38 (rGREAT >= 1.16.1)
 

@@ -440,7 +440,8 @@ intersectPeakMatrix <- function(peak_id_x,
       peakx_with_peaky <- unique(as.data.frame(bedx_with_bedy))
       x_interect_percentage <- 100*nrow(peakx_with_peaky)/nrow(peak_x)
       MethMotif_x <- new('MethMotif')
-      external_signal_in_x <- c(NA)
+      external_signal_in_x <- c("signal_number"=NA, "mean"=NA,"SD"=NA,"median"=NA,
+                                "quartile_25"=NA, "quartile_75"=NA)
       tag_density_x <- c("peak_number"=NA, "mean"=NA,"SD"=NA,"median"=NA,
                          "quartile_25"=NA, "quartile_75"=NA)
       # collecting all CpG meth scores in the defined methylation profile area
@@ -643,7 +644,8 @@ intersectPeakMatrix <- function(peak_id_x,
       peaky_with_peakx <- unique(as.data.frame(bedy_with_bedx))
       y_interect_percentage <- 100*nrow(peaky_with_peakx)/nrow(peak_y)
       MethMotif_y <- new('MethMotif')
-      external_signal_in_y <- c(NA)
+      external_signal_in_y <- c("signal_number"=NA, "mean"=NA,"SD"=NA,"median"=NA,
+                                "quartile_25"=NA, "quartile_75"=NA)
       tag_density_y <- c("peak_number"=NA, "mean"=NA,"SD"=NA,"median"=NA,
                          "quartile_25"=NA, "quartile_75"=NA)
       # collecting all CpG meth scores in the defined methylation profile area
