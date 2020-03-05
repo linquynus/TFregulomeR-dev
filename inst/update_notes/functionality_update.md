@@ -1,11 +1,14 @@
-## Current Functionalities v1.2.2 (Development version) - 10 January 2020
-### What's new compared to last version v1.2.1 
-1) Modified the functions _intersectPeakMatrix_ and _intersectPeakMatrixResult_ to allow profiling of users' input external signals during pair-wise comparison analysis.
-2) Added a new function _interactome3D_ which could directly generate a dynamic 3D interface report showing TF interactome coupled with CpG methylation and users' input external signal values.
-
+## Current Functionalities v2.0.0 - 5 January 2020
+### What's new compared to last version v1.2.2 
+1) Added new TFregulomeR compendium server in Canada. Users now can choose servers between Singapore and Canada.
+2) linked to mouse TFregulomeR compendium in Canada server, coming soon in Singapore server.
 
 
 ## Previous  Version
+### Functionalities version 1.2.2 - 10 January 2020
+1) Modified the functions _intersectPeakMatrix_ and _intersectPeakMatrixResult_ to allow profiling of users' input external signals during pair-wise comparison analysis.
+2) Added a new function _interactome3D_ which could directly generate a dynamic 3D interface report showing TF interactome coupled with CpG methylation and users' input external signal values.
+
 ### Functionalities version 1.2.1 - 25 October 2019
 1) Improved the function _greatAnnotate_, which now allows to use peak regions in hg38 directly with rGREAT >= 1.16.1 (no need liftover package).
 
