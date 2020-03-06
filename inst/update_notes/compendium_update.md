@@ -1,7 +1,7 @@
 ## Current TFBSs in TFregulomeR compendium v2.0.0
 What's new in the version v2.0.0 - 5 March 2019:
 
-1) 865 PWMs in mouse were added (For Canada server; for Singpaore server coming soon).
+1) 865 PWMs in mouse were added (For Canada server; for Singapore server coming soon).
 
 
 ## Previous TFregulomeR data compendium 
