@@ -104,9 +104,10 @@ plotLogo <- function(MM_object, logo_type="entropy", meth_level="all")
                               FUN=sum)
       colnames(sum_of_pos) <- c("pos", "sum")
       #plot beta score
-      p1 <- ggplot(data = plot_beta_score[order(plot_beta_score$meth, decreasing = FALSE),],
-                   aes(x=pos,y=as.numeric(as.character(plot_beta_score$number)),
-                       fill=plot_beta_score$meth)) +
+      plot_beta_score <- plot_beta_score[order(plot_beta_score$meth, decreasing = FALSE),]
+      p1 <- ggplot(data = plot_beta_score,
+                   aes(x=pos,y=as.numeric(as.character(number)),
+                       fill=meth)) +
         geom_bar(colour="black", stat="identity") +
         scale_fill_manual(values = barplot_color) + ylim(0, ylim) +
         theme(axis.title.y=element_blank(), axis.title.x=element_blank(), axis.text.y=element_blank(),
@@ -117,7 +118,7 @@ plotLogo <- function(MM_object, logo_type="entropy", meth_level="all")
               panel.grid.major = element_blank(), panel.grid.minor = element_blank(),
               panel.background = element_blank(),
               plot.title = element_text(hjust = 0.5, size = 10)) +
-        stat_summary(fun.y = sum, aes(label = stat(sum_of_pos$sum), group = pos), geom = "text",vjust = -0.5)+
+        stat_summary(fun = sum, aes(label = stat(sum_of_pos$sum), group = pos), geom = "text",vjust = -0.5)+
         ggtitle(title_for_nPeaks)
     }
     else
