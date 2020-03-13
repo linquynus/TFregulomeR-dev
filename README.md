@@ -38,7 +38,7 @@ You can check detailed package instructions in [Vignettes](https://bioinfo-csi.n
 
 -------
 
-## Current Functionalities v2.0.0
+## Current Functionalities v2.0.1
 ### Click [here](./inst/update_notes/functionality_update.md) for functionality update notes 
 
 _Currently, TFregulomeR links to data compendium hosted in Singapore (default) and Canada. User is able to switch the servers by changing the input parameter 'server' when using those functions highlighted as 'multi-servers' below. For Singapore server, please use `server='sg'`, and for Canada one, please use `server='ca'`. For example, when browsing TFregulomeR data compendium hosted in Canada, using `dataBrowser(server='ca')`. For details, please refer to the Vignettes._
