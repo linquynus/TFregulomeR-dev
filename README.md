@@ -27,7 +27,7 @@ New features:
 
 #### This repository is for TFregulomeR development release
 
-#### Current TFregulomeR development version: 2.0.0 (Updated on 5 March 2020).
+#### Current TFregulomeR development version: 2.0.1 (Updated on 13 March 2020).
 
 #### For stable release, please visit [TFregulomeR](https://github.com/benoukraflab/TFregulomeR)
 
