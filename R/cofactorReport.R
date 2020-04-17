@@ -102,9 +102,9 @@ cofactorReport <- function(intersectPeakMatrix,
         cobinding_ylabel_new <- paste0(as.character(intersect_matrix_heatmap_i$new_x),
                                        "\n+\n",cobinding_ylabel)
         colors_cobinding <- colorRampPalette(c("white","#D46A6A", "#801515", "#550000"))(11)
-        p1 <- ggplot(intersect_matrix_heatmap_i,aes(x=intersect_matrix_heatmap_i$new_x,
-                                                    y=intersect_matrix_heatmap_i$new_y,
-                                                    fill=intersect_matrix_heatmap_i$value))+
+        p1 <- ggplot(intersect_matrix_heatmap_i,aes(x=new_x,
+                                                    y=new_y,
+                                                    fill=value))+
             geom_tile()+scale_fill_gradientn(colours=colors_cobinding,
                                              breaks=c(seq(0, 100, length=11)),
                                              limits=c(0,100))+
@@ -122,9 +122,9 @@ cofactorReport <- function(intersectPeakMatrix,
         colnames(legend1_matrix) <- c("cobinding","value")
         legend1_matrix[,1] <- "x"
         legend1_matrix[,2] <- seq(0,100,10)
-        p_legend1 <- ggplot(legend1_matrix,aes(x=legend1_matrix$value,
-                                               y=legend1_matrix$cobinding,
-                                               fill=legend1_matrix$value))+
+        p_legend1 <- ggplot(legend1_matrix,aes(x=value,
+                                               y=cobinding,
+                                               fill=value))+
             geom_tile()+scale_fill_gradientn(colours=colors_cobinding,
                                              breaks=c(seq(0, 100, length=11)),
                                              limits=c(0,100))+
@@ -226,9 +226,9 @@ cofactorReport <- function(intersectPeakMatrix,
             methylation_matrix_inside$meth_interval <- factor(methylation_matrix_inside$meth_interval,
                                                               levels = as.character(c("unmeth","in-between","meth")))
             colors_meth <- colorRampPalette(c("white","#7887AB", "#4F628E", "#2E4172","#061539"))(11)
-            p3 <- ggplot(methylation_matrix_inside,aes(x=methylation_matrix_inside$meth_interval,
-                                                       y=methylation_matrix_inside$new_y,
-                                                       fill=methylation_matrix_inside$value))+
+            p3 <- ggplot(methylation_matrix_inside,aes(x=meth_interval,
+                                                       y=new_y,
+                                                       fill=value))+
                 geom_tile()+scale_fill_gradientn(colours=colors_meth,
                                                  breaks=c(seq(0, 100, length=11)),
                                                  limits=c(0,100))+
@@ -290,9 +290,9 @@ cofactorReport <- function(intersectPeakMatrix,
 
             methylation_matrix$meth_interval <- factor(methylation_matrix$meth_interval,
                                                        levels = as.character(c("unmeth","in-between","meth")))
-            p4 <- ggplot(methylation_matrix,aes(x=methylation_matrix$meth_interval,
-                                                y=methylation_matrix$new_y,
-                                                fill=methylation_matrix$value))+
+            p4 <- ggplot(methylation_matrix,aes(x=meth_interval,
+                                                y=new_y,
+                                                fill=value))+
                 geom_tile()+scale_fill_gradientn(colours=colors_meth,
                                                  breaks=c(seq(0, 100, length=11)),
                                                  limits=c(0,100))+
@@ -313,9 +313,9 @@ cofactorReport <- function(intersectPeakMatrix,
         }
 
         # methylation legend
-        p_legend2 <- ggplot(legend1_matrix,aes(x=legend1_matrix$value,
-                                               y=legend1_matrix$cobinding,
-                                               fill=legend1_matrix$value))+
+        p_legend2 <- ggplot(legend1_matrix,aes(x=value,
+                                               y=cobinding,
+                                               fill=value))+
             geom_tile()+scale_fill_gradientn(colours=colors_meth,
                                              breaks=c(seq(0, 100, length=11)),
                                              limits=c(0,100))+
@@ -371,8 +371,8 @@ cofactorReport <- function(intersectPeakMatrix,
         colnames(tag_q1_i_t_filter) <- c("y1","x1")
         colnames(tag_q3_i_t_filter) <- c("y3","x3")
         tag_quartile_total2 <- cbind(tag_q1_i_t_filter,tag_q3_i_t_filter)
-        p_tag <- ggplot(tag_median_i_t_filter, aes(x=tag_median_i_t_filter$x,
-                                                   y = tag_median_i_t_filter$y))+
+        p_tag <- ggplot(tag_median_i_t_filter, aes(x=x,
+                                                   y = y))+
             geom_point(shape=19, size=3)+
             ylim(0,tag_max_value_int)+
             xlim(tag_x_min,tag_x_max)+
@@ -385,13 +385,13 @@ cofactorReport <- function(intersectPeakMatrix,
                   axis.title.x = element_text(size=6),
                   axis.text.x = element_text(size=6))+
             geom_point(data = tag_quartile_total1, shape = "|", size = 3,
-                       mapping = aes(x=tag_quartile_total1$x,
-                                     y=tag_quartile_total1$y))+
+                       mapping = aes(x=x,
+                                     y=y))+
             geom_segment(data = tag_quartile_total2,
-                         mapping=aes(x=tag_quartile_total2$x1,
-                                     y=tag_quartile_total2$y1,
-                                     xend=tag_quartile_total2$x3,
-                                     yend=tag_quartile_total2$y3))+
+                         mapping=aes(x=x1,
+                                     y=y1,
+                                     xend=x3,
+                                     yend=y3))+
             labs(y="Read enrichment score")+
             coord_flip()
 
