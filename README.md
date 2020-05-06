@@ -131,7 +131,7 @@ In R console,
 ```r
 # if you have not installed "devtools" package
 install.packages("devtools")
-# install development version 2.0.0
+# install development version 2.0.1
 devtools::install_github("linquynus/TFregulomeR-dev", ref="master")
 ```
 The step above will automatically install the required packages. However, you still need to install optional packages if you opt to use the functions such as `greatAnnotate()`, `genomeAnnotate()` and `toTFBSTools()`.
