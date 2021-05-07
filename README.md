@@ -8,7 +8,9 @@
 
 TFregulomeR-dev
 
-v2.0.1 [<img src="https://www.ymcachicago.org/page/-/kroehler/blog/icon-new-9.jpg" alt="new" width="30"></img>](./inst/update_notes/functionality_update.md)
+v2.0.1 
+
+bug fixed in http failure in v2.0.0 (updated on May 7, 2021)
 
 [![Build Status](https://travis-ci.com/linquynus/TFregulomeR-dev.svg?branch=master)](https://travis-ci.com/linquynus/TFregulomeR-dev)
 
