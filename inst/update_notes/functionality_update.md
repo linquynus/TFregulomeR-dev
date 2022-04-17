@@ -1,9 +1,11 @@
-## Current Functionalities v2.0.1 - 7 May 2021
-1) Fixed warnings in plotLogo function in accordance with new ggplot2 package.
-2) bug fixed regarding http failure.
+## Current Functionalities v2.0.2 - 17 April 2022
+Changed to Canada server as default (Singapore server retired)
 
 
 ## Previous  Version
+### Functionalities version 2.0.0 - 5 March 2020
+1) Fixed warnings in plotLogo function in accordance with new ggplot2 package.
+2) bug fixed regarding http failure.
 ### Functionalities version 2.0.0 - 5 March 2020
 1) Added new TFregulomeR compendium server in Canada. Users now can choose servers between Singapore and Canada.
 2) linked to mouse TFregulomeR compendium in Canada server, coming soon in Singapore server.
