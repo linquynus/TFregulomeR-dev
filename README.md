@@ -42,7 +42,7 @@ You can check detailed package instructions in [Vignettes](https://methmotif.org
 ## Current Functionalities v2.0.2
 ### Click [here](./inst/update_notes/functionality_update.md) for functionality update notes 
 
-_Currently, TFregulomeR links to data compendium hosted in Canada (default). Singapore server is not more accessible. For Canada one, please use `server='ca'`. For example, when browsing TFregulomeR data compendium hosted in Canada, using `dataBrowser(server='ca')`._
+_Currently, TFregulomeR links to data compendium hosted in Canada (default). Singapore server is no more accessible. For Canada one, please use `server='ca'`. For example, when browsing TFregulomeR data compendium hosted in Canada, using `dataBrowser(server='ca')`._
 
 Note: new function is highlighted in bold font.
 

@@ -3,7 +3,7 @@ Changed to Canada server as default (Singapore server retired)
 
 
 ## Previous  Version
-### Functionalities version 2.0.0 - 7 May 2021
+### Functionalities version 2.0.1 - 7 May 2021
 1) Fixed warnings in plotLogo function in accordance with new ggplot2 package.
 2) bug fixed regarding http failure.
 ### Functionalities version 2.0.0 - 5 March 2020
